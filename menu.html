@@ -5,12 +5,18 @@
 <script src="/path/to/jquery.fancybox.min.js"></script>
 
 <style>
-    .menu-body {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+  :root {
+
+    --body-font: 'Poppins', sans-serif;
+  }
+  .menu-body {
      max-width: 680px;
      margin: 0 auto;
      display: block;
-     color: rgb(92, 92, 92);
-   }
+     color: #7a1818;
+  }
    
    .menu-section {
      margin-bottom: 80px;
@@ -23,21 +29,22 @@
      font-weight:normal;
      margin: 20px 0;
      text-align: Center;
+     color: #393939;
    }
    
    .menu-item {
-     margin: 35px 0;
+     margin: 15px 0;
      font-size: 18px;
    }
    
    .menu-item-name{
-     font-family: helvetica;
+     font-family: var(--body-font);
      font-weight: bold;
      border-bottom: 2px dotted rgb(213, 213, 213);
    }
    
    .menu-item-description {
-     font-style: italic;
+     
      font-size: .9em;
      line-height: 1.5em;
    }
@@ -47,253 +54,282 @@
      font-weight: bold;
      font-family: arial;
      margin-top: -22px;
-   }
-   </style>
 
+
+   }
+
+
+
+  .text{
+    display: inline-block;
+    padding-right: 30px;
+  }
+  .text a{
+    color: #707070;
+  }
+  .text a:hover{
+    color: #7a1818;
+  }
+</style>
 
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #990000;
-  color: white;
-}
-</style>
 </head>
-<body>
 
-
-
-
-</body>
-</html>
 
 <header class="l-header" id="header">
-   <nav class="nav bd-container">
-      <a href="index.html" class="button">home</a>
+  <nav class="nav bd-container">
+     <a href="index.html" class="button">home</a>
 
 
 
-       <div class="nav__toggle" id="nav-toggle">
-           <i class='bx bx-menu'></i>
-       </div>
-   </nav>
+      <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-menu'></i>
+      </div>
+  </nav>
 </header>
 
+<div class="menu-body">
 
+  <div class="menu-section">
 
-
-   <div class="menu-body">
-
-    
-    <div class="menu-section">
-      
-        <h2 class="menu-section-title">
-         food
+       <h2 class="menu-section-title">
+            menu
         </h2>
 
         <!--========== Cycle One Week One ==========-->
 
-        <div class="menu-item">
-         <div class="menu-item-name">
-Cycle One Week One         </div>
-<div>
-      <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 1/Daily Fresh 2021- Cycle 1 Week 1 Breakfast (V1)(06.06.18).pdf">
-          <img   src="assets/img/sections/breakfast.png">
-      </a>
+  <div class="menu-item">
+    <div class="menu-item-name">      Cycle One Week One         </div>
+      
 
-      <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 1/Daily Fresh 2021- Cycle 1 Week 1 Lunch (V1)(06.06.18) (1).pdf">
-        <img src="assets/img/sections/lunch.png">
-    </a>
+        <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 1/Daily Fresh 2021- Cycle 1 Week 1 Breakfast (V1)(06.06.18).pdf">
+            Breakfast
+          </a>
+        </div>
 
-    <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 1/Daily Fresh 2021- Cycle 1 Week 1 Dinner (V1)(13.08.2018).pdf">
-      <img src="assets/img/sections/dinner.png">
-  </a>
+        <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 1/Daily Fresh 2021- Cycle 1 Week 1 Lunch (V1)(06.06.18) (1).pdf">
+            Lunch
+          </a>
+        </div>
 
-          <!--========== Cycle One Week Two ==========-->
+        <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 1/Daily Fresh 2021- Cycle 1 Week 1 Dinner (V1)(13.08.2018).pdf">
+            Dinner
+          </a>
+      </div>
 
-          <div class="menu-item">
-            <div class="menu-item-name">
-   Cycle One Week Two         </div>
-   <div>
-         <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 2/Daily Fresh 2021- Cycle 1 Week 2 Breakfast (V1)(06.06.18).pdf">
-             <img   src="assets/img/sections/breakfast.png">
-         </a>
-   
-         <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 2/Daily Fresh 2021- Cycle 1 Week 2 Dinner (V1)(23.08.2018).pdf">
-           <img src="assets/img/sections/lunch.png">
-       </a>
-   
-       <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 2/Daily Fresh 2021- Cycle 1 Week 2 Lunch (V1)(06.06.18).pdf">
-         <img src="assets/img/sections/dinner.png">
-     </a>
+  </div>
+            <!--========== Cycle One Week Two ==========-->
 
-             <!--========== Cycle One Week Three ==========-->
+  <div class="menu-item">
+    <div class="menu-item-name">  Cycle One Week Two         </div>
+        
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 2/Daily Fresh 2021- Cycle 1 Week 2 Breakfast (V1)(06.06.18).pdf">
+                  Breakfast
+              </a>
+          </div>
 
-             <div class="menu-item">
-              <div class="menu-item-name">
-     Cycle One Week Three         </div>
-     <div>
-           <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 3/Daily Fresh 2021- Cycle 1 Week 3 Breakfast (V1)(06.06.18).pdf">
-               <img   src="assets/img/sections/breakfast.png">
-           </a>
-     
-           <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 3/Daily Fresh 2021- Cycle 1 Week 3 Lunch (V1)(23.08.18).pdf">
-             <img src="assets/img/sections/lunch.png">
-         </a>
-     
-         <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 3/Daily Fresh - Cycle 1Week 3 Dinner (V1)(13.08.18).pdf">
-           <img src="assets/img/sections/dinner.png">
-       </a>
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 2/Daily Fresh 2021- Cycle 1 Week 2 Dinner (V1)(23.08.2018).pdf">
+              Lunch
+            </a>
+        </div>
 
-               <!--========== Cycle Two Week One ==========-->
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 2/Daily Fresh 2021- Cycle 1 Week 2 Lunch (V1)(06.06.18).pdf">
+              Dinner
+          </a>
+        </div>
+  </div>
 
-               <div class="menu-item">
-                <div class="menu-item-name">
-       Cycle Two Week One         </div>
-       <div>
-             <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 1/Daily Fresh - Cycle 2 Week 1 Breakfast (1).pdf">
-                 <img   src="assets/img/sections/breakfast.png">
-             </a>
-       
-             <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 1/Daily Fresh - Cycle 2 Week 1 Lunch 2018 Nieuw.pdf">
-               <img src="assets/img/sections/lunch.png">
-           </a>
-       
-           <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 1/Daily Fresh - Cycle 2 Week 1 Dinner 2018 Nieuw.pdf">
-             <img src="assets/img/sections/dinner.png">
-         </a>
-
-                 <!--========== Cycle Two Week Two ==========-->
-
-        <div class="menu-item">
-          <div class="menu-item-name">
- Cycle Two Week Two         </div>
- <div>
-       <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 2/Daily Fresh - Cycle 2 Week 2 Breakfast 2018 Laatste.pdf">
-           <img   src="assets/img/sections/breakfast.png">
-       </a>
+              <!--========== Cycle One Week Three ==========-->
  
-       <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 2/Daily Fresh - Cycle 2 Week 2 Lunch 2018 Laatste.pdf">
-         <img src="assets/img/sections/lunch.png">
-     </a>
- 
-     <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 2/Daily Fresh - Cycle 2 Week 2 Dinner 2018 Latin Am Culture Week.pdf">
-       <img src="assets/img/sections/dinner.png">
-   </a>
+  <div class="menu-item">
+      
+    <div class="menu-item-name"> Cycle One Week Three         </div>
+      
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 3/Daily Fresh 2021- Cycle 1 Week 3 Breakfast (V1)(06.06.18).pdf">
+                Breakfast
+            </a>
+        </div>
 
-           <!--========== Cycle Two Week Three ==========-->
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 3/Daily Fresh 2021- Cycle 1 Week 3 Lunch (V1)(23.08.18).pdf">
+              Lunch
+          </a>
+      </div>
 
-           <div class="menu-item">
-            <div class="menu-item-name">
-   Cycle Two Week Three         </div>
-   <div>
-         <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 3/Daily Fresh - Cycle 2 Week 3 Breakfast 2018 (1).pdf">
-             <img   src="assets/img/sections/breakfast.png">
-         </a>
-   
-         <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 3/Daily Fresh - Cycle 2 Week 3 Lunch 2018.pdf">
-           <img src="assets/img/sections/lunch.png">
-       </a>
-   
-       <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 3/Daily Fresh - Cycle 2 Week 3 Dinner 2018.pdf">
-         <img src="assets/img/sections/dinner.png">
-     </a>
+      <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 1/Week 3/Daily Fresh - Cycle 1Week 3 Dinner (V1)(13.08.18).pdf">
+            Dinner
+        </a>
+      </div>
+  </div>
+                <!--========== Cycle Two Week One ==========-->
 
-                <!--========== Cycle Three Week One ==========-->
+  <div class="menu-item">
+    
+    <div class="menu-item-name"> Cycle Two Week One         </div>
+          
+      <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 1/Daily Fresh - Cycle 2 Week 1 Breakfast (1).pdf">
+                    Breakfast
+          </a>
+      </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-name">
-         Cycle Three Week One         </div>
-         <div>
-               <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 1/Daily Fresh - Cycle 3 Week 1 Breakfast 2019.pdf">
-                   <img   src="assets/img/sections/breakfast.png">
-               </a>
-         
-               <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 1/Daily Fresh - Cycle 3 Week 1 Lunch 2019.pdf">
-                 <img src="assets/img/sections/lunch.png">
-             </a>
-         
-             <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 1/Daily Fresh - Cycle 3 Week 1 Dinner 2019.pdf">
-               <img src="assets/img/sections/dinner.png">
-           </a>
+      <div class="text">
+              <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 1/Daily Fresh - Cycle 2 Week 1 Lunch 2018 Nieuw.pdf">
+                  Lunch
+            </a>
+      </div>
 
-                      <!--========== Cycle Three Week Two ==========-->
+      <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 1/Daily Fresh - Cycle 2 Week 1 Dinner 2018 Nieuw.pdf">
+                Dinner
+          </a>
+      </div>
+  </div>
+                  <!--========== Cycle Two Week Two ==========-->
 
-                      <div class="menu-item">
-                        <div class="menu-item-name">
-               Cycle Three Week Two         </div>
-               <div>
-                     <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 2/Daily Fresh - Cycle 3 Week 2 Breakfast 2019 (1).pdf">
-                         <img   src="assets/img/sections/breakfast.png">
-                     </a>
-               
-                     <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 2/Daily Fresh - Cycle 3 Week 2 Lunch 2019.pdf">
-                       <img src="assets/img/sections/lunch.png">
-                   </a>
-               
-                   <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 2/Daily Fresh - Cycle 3 Week 2 Dinner 2019.pdf">
-                     <img src="assets/img/sections/dinner.png">
-                 </a>
+  <div class="menu-item">
+      
+    <div class="menu-item-name"> Cycle Two Week Two         </div>
 
-                            <!--========== Cycle Three Week Three ==========-->
+      <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 2/Daily Fresh - Cycle 2 Week 2 Breakfast 2018 Laatste.pdf">
+            Breakfast
+        </a>
+    </div>
 
-           <div class="menu-item">
-            <div class="menu-item-name">
-   Cycle Three Week Three         </div>
-   <div>
-         <a data-fancybox="gallery" href="test.png">
-             <img   src="assets/img/sections/breakfast.png">
-         </a>
-   
-         <a data-fancybox="gallery" href="test.png">
-           <img src="assets/img/sections/lunch.png">
-       </a>
-   
-       <a data-fancybox="gallery" href="test.png">
-         <img src="assets/img/sections/dinner.png">
-     </a>
+    <div class="text">
+        <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 2/Daily Fresh - Cycle 2 Week 2 Lunch 2018 Laatste.pdf">
+          Lunch
+        </a>
+    </div>
 
+    <div class="text">
+        <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 2/Daily Fresh - Cycle 2 Week 2 Dinner 2018 Latin Am Culture Week.pdf">
+        Dinner
+        </a>
+    </div>
+  
+  </div>
 
+            <!--========== Cycle Two Week Three ==========-->
 
+  <div class="menu-item">
+      <div class="menu-item-name">    Cycle Two Week Three         </div>
 
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 3/Daily Fresh - Cycle 2 Week 3 Breakfast 2018 (1).pdf">
+                Breakfast
+            </a>
+        </div>
 
+        <div class="text">
+            <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 3/Daily Fresh - Cycle 2 Week 3 Lunch 2018.pdf">
+                Lunch
+          </a>
+        </div>
 
+        <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 2/Week 3/Daily Fresh - Cycle 2 Week 3 Dinner 2018.pdf">
+              Dinner
+          </a>
 
+        </div>
 
-  <style>
-    img {
-height: 6%;
-      width: 32%;
-    }
-    </style>
+  </div>
+
+                  <!--========== Cycle Three Week One ==========-->
+
+  <div class="menu-item">
+    
+    <div class="menu-item-name">    Cycle Three Week One         </div>
+
+        <div class="text">
+                <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 1/Daily Fresh - Cycle 3 Week 1 Breakfast 2019.pdf">
+                      Breakfast
+                </a>
+        </div>
+        
+        <div class="text">
+                <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 1/Daily Fresh - Cycle 3 Week 1 Lunch 2019.pdf">
+                      Lunch
+              </a>
+        </div>
+          
+        <div class="text">
+              <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 1/Daily Fresh - Cycle 3 Week 1 Dinner 2019.pdf">
+                    Dinner
+            </a>
+        </div>
+
+  </div>
+
+                        <!--========== Cycle Three Week Two ==========-->
+
+  <div class="menu-item">
+      
+    <div class="menu-item-name">      Cycle Three Week Two         </div>
+        
+      <div class="text">
+        <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 2/Daily Fresh - Cycle 3 Week 2 Breakfast 2019 (1).pdf">
+              Breakfast
+          </a>
+      </div>
+
+      <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 2/Daily Fresh - Cycle 3 Week 2 Lunch 2019.pdf">
+              Lunch
+          </a>
+      </div>
+
+      <div class="text">
+          <a data-fancybox="gallery" href="assets/img/menu_pic/Cycle 3/Week 2/Daily Fresh - Cycle 3 Week 2 Dinner 2019.pdf">
+                     Dinner
+          </a>
+      </div>
+
+  </div>
+
+                              <!--========== Cycle Three Week Three ==========-->
+
+  <div class="menu-item">
+      <div class="menu-item-name"> Cycle Three Week Three         </div>
+
+      <div class="text">
+          <a data-fancybox="gallery" href="test.png">
+              Breakfast
+          </a>
+      </div>
+
+      <div class="text">
+          <a data-fancybox="gallery" href="test.png">
+              Lunch
+        </a>
+      </div>
+
+      <div class="text">
+        <a data-fancybox="gallery" href="test.png">
+            Dinner
+        </a>
+      </div>
+
+  </div>
+
 
 </div>
 
+</html>
 
          
