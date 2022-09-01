@@ -316,12 +316,13 @@ img{
 .services__content{
   text-align: center;
 }
-
+.services__content 
 .services__img{
   width: 64px;
   height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
+  text-decoration: none !important;
 }
 
 .news__title,
