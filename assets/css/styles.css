@@ -103,7 +103,7 @@ ul{
 }
 
 a{
-text-decoration: none !important;
+text-decoration: none ;
 }
 
 img{
@@ -340,7 +340,10 @@ img{
 .news__description{
   text-align: justify;
 }
+.services_link{
 
+  color: inherit; 
+}
 /*========== MENU ==========*/
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
